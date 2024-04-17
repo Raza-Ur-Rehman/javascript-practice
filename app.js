@@ -79,8 +79,69 @@
 
 // question 1
 
-var age = 15
-alert("I am" + age + "year old")
+// var age = 15;
+// alert("I am " + age + " year old");
+
+// question 2
+
+// var visit = 15;
+// alert("you have visited this site "+ visit +" times");
+
+// question 3
+
+// var birthyear = 2004;
+// document.write("My birth year is "+ birthyear+"</br>");
+
+// question 4 
+
+// var customer = " Jhon deo ordered ";
+// var order = 5;
+
+// document.write(customer+ order+ " T-shirts on XYZ clothing store");
+// chapter 3 closed //
+//  chapter 4 
+
+// question 1
+
+// var numA,numB,numC;
+
+// question 2
+
+// // Illegal Variables //
+
+// var 1variable;
+// var 2 variable;
+// var alert;
+// var space in variable;
+// var 5th variable;
+
+// // Legal Variables //
+
+// var Variable;
+// var $leal;
+// var also_a_variable;
+// var Another_Legal_Variable;
+// var imAlsoLegal;
+
+// question 3
+
+// document.write("<h1>Rules For Naming JS Variable</h1>")
+// document.write("a variable can only contain letter,number Dollarsign and underscore For example $my_1stVariable </br>")
+// document.write("Variables names are case sensitive </br>" )
+// document.write("Variables Names shpuld not be JS keywords </br>")
+
+// chapter 4 closed//
+// chapter 5 
+
+// question 1 
+
+
+
+
+
+
+
+
 
 
 
