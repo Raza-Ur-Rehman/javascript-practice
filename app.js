@@ -29,60 +29,58 @@
 
 //  Question no  1 to 4
 
-var username;
+// var username;
 
-var myName = "Raza ur Rehman";
+// var myName = "Raza ur Rehman";
 
-var message = " Hello world ";
+// var message = " Hello world ";
 
-alert(message);
+// alert(message);
 
-var student;
+// var student;
 
-student = "Johne Doe";
+// student = "Johne Doe";
 
-alert(student);
+// alert(student);
 
-student = "15 year old";
+// student = "15 year old";
 
-alert(student);
+// alert(student);
 
-student = "Certified Mobile Application Development"
+// student = "Certified Mobile Application Development"
 
-alert(student);
+// alert(student);
 
-//  Question no  5
+// //  Question no  5
 
-var pizza = "pizza \n pizz \n piz \n pi \n p";
+// var pizza = "pizza \n pizz \n piz \n pi \n p";
 
-alert(pizza);
+// alert(pizza);
 
-var email1 = "My email address is ";
+// var email1 = "My email address is ";
 
-var email2 = "mrazaurreheman2@gmail.com";
+// var email2 = "mrazaurreheman2@gmail.com";
 
-alert(email1+email2);
+// alert(email1+email2);
 
-var book = "A Smarter way to learn Javascript";
+// var book = "A Smarter way to learn Javascript";
 
-alert(book);
+// alert(book);
 
-document.write("<h1> I can write HTML contant through Javascript</h1>");
+// document.write("<h1> I can write HTML contant through Javascript</h1>");
 
-var design = "“▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”";
+// var design = "“▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”";
 
-alert(design);
+// alert(design);
 
 // chapter 2 closed//
 
+// chapter 3
 
+// question 1
 
-// for (let i = 1; i <=10; i++) {
-//     document.write("2 x ",i,"=",2*i,"<br>");
-    
-// }
-
-
+var age = 15
+alert("I am" + age + "year old")
 
 
 
