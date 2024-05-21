@@ -1,4 +1,21 @@
 ///          youtube exercise practice      ///
+/////      chapter 1 : variable & data type     ///////
+
+// Question 1 
+// create a const object called "product" to store information ? 
+// ANS :
+
+const product = {
+    title: "ball pen",
+    rating: 4,
+    offer: 5 ,
+    price: 270,
+
+};
+console.log(product);
+
+
+
 
 /////      Chapter 04 :  array    //////
 // Q 01:
@@ -15,7 +32,7 @@ for (let val of marks) {
 
 }
 let avg = sum / marks.length;
-console.log(`avg marks in this class= ${avg}`);
+// console.log(`avg marks in this class= ${avg}`);
 
 // Q 02:
 // For a given array with price of 5 items -> [250,645,300,900,50] all items have an offer of 10% OFF on them . change the array to dtore final price after appling offer.
@@ -33,7 +50,7 @@ for (let i = 0; i < items.length; i++) {
 
 }
 
-console.log(items);
+// console.log(items);
 
 for (let val of items) {
 
@@ -41,7 +58,7 @@ for (let val of items) {
 
     items[i] = items[i] - offer;
 
-    console.log(`value after offer = ${items[i]}`);
+    // console.log(`value after offer = ${items[i]}`);
     i++;
 
 
