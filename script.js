@@ -1,78 +1,121 @@
-///          youtube exercise practice      ///
-/////      chapter 1 : variable & data type     ///////
+// ///          youtube exercise practice      ///
+// /////      chapter 1 : variable & data type     ///////
 
-// Question 1 
-// create a const object called "product" to store information ? 
-// ANS :
+// // Question 1 
+// // create a const object called "product" to store information ? 
+// // ANS :
 
-const product = {
-    title: "ball pen",
-    rating: 4,
-    offer: 5 ,
-    price: 270,
+// const product = {
+//     title: "ball pen",
+//     rating: 4,
+//     offer: 5 ,
+//     price: 270,
 
-};
-console.log(product);
-
-
+// };
+// console.log(product);
 
 
-/////      Chapter 04 :  array    //////
-// Q 01:
-// For a given array with mark of student -> [85,97,44,37,76,60] find the average marks od the entire class.
 
-// Ans:
 
-let marks = [85, 97, 44, 37, 76, 60];
+// /////      Chapter 04 :  array    //////
+// // Q 01:
+// // For a given array with mark of student -> [85,97,44,37,76,60] find the average marks od the entire class.
 
-let sum = 0;
+// // Ans:
 
-for (let val of marks) {
-    sum += val;
+// let marks = [85, 97, 44, 37, 76, 60];
+
+// let sum = 0;
+
+// for (let val of marks) {
+//     sum += val;
+
+// }
+// let avg = sum / marks.length;
+// // console.log(`avg marks in this class= ${avg}`);
+
+// // Q 02:
+// // For a given array with price of 5 items -> [250,645,300,900,50] all items have an offer of 10% OFF on them . change the array to dtore final price after appling offer.
+
+// // Ans: 
+
+// let items = [250, 645, 300, 900, 50];
+
+// let i = 0;
+
+// for (let i = 0; i < items.length; i++) {
+//     let offer = items[i] / 10;
+//     items[i] -= offer
+//     break
+
+// }
+
+// // console.log(items);
+
+// for (let val of items) {
+
+//     let offer = val / 10;
+
+//     items[i] = items[i] - offer;
+
+//     // console.log(`value after offer = ${items[i]}`);
+//     i++;
+
+
+// }
+
+// /////      Chapter 05 :  Function & Methods    //////
+
+
+               /// W3Resourse Question  ////
+
+//  Q1 :  Write a JavaScript program to display the current day and time in the following format.  
+// Sample Output : Today is : Tuesday.
+// Current time is : 10 PM : 30 : 38
+
+const currentTime = ()=>{
+    let newDate = new Date();
+ 
+let day = newDate.getDay();
+
+let daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+
+let hour = newDate.getHours();
+let minute = newDate.getMinutes();
+let second = newDate.getSeconds();
+
+const perpand = (hour >= 12 ) ? "PM" : "AM";
+
+hour = (hour >= 12 ) ? hour - 12 : hour ;
+
+if (hour === 0 && perpand === 'PM')  {
+    if (minute === 0 && second === 0) {
+        hour = 12;
+        perpand = 'Noon' 
+    }
+    else {
+        hour = 12;
+        perpand= 'PM';
+    }
+}
+
+
+if (hour === 0 && perpand === 'AM')  {
+    if (minute === 0 && second === 0) {
+        hour = 12;
+        perpand = 'Midnight' 
+    }
+    else {
+        hour = 12;
+        perpand= 'AM';
+    }
+}
+
+console.log( daylist[day] + " : " + hour + perpand + " : " + minute + " : " + second);
+
 
 }
-let avg = sum / marks.length;
-// console.log(`avg marks in this class= ${avg}`);
-
-// Q 02:
-// For a given array with price of 5 items -> [250,645,300,900,50] all items have an offer of 10% OFF on them . change the array to dtore final price after appling offer.
-
-// Ans: 
-
-let items = [250, 645, 300, 900, 50];
-
-let i = 0;
-
-for (let i = 0; i < items.length; i++) {
-    let offer = items[i] / 10;
-    items[i] -= offer
-    break
-
-}
-
-// console.log(items);
-
-for (let val of items) {
-
-    let offer = val / 10;
-
-    items[i] = items[i] - offer;
-
-    // console.log(`value after offer = ${items[i]}`);
-    i++;
-
-
-}
-
-/////      Chapter 05 :  Function & Methods    //////
-
-
-
-
-
-
-
-
-
+currentTime();
 
 
