@@ -73,49 +73,142 @@
 // Sample Output : Today is : Tuesday.
 // Current time is : 10 PM : 30 : 38
 
-const currentTime = ()=>{
-    let newDate = new Date();
+// ANS:
+
+// const currentTime = ()=>{
+//     let newDate = new Date();
  
-let day = newDate.getDay();
+// let day = newDate.getDay();
 
-let daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+// let daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 
-let hour = newDate.getHours();
-let minute = newDate.getMinutes();
-let second = newDate.getSeconds();
+// let hour = newDate.getHours();
+// let minute = newDate.getMinutes();
+// let second = newDate.getSeconds();
 
-const perpand = (hour >= 12 ) ? "PM" : "AM";
+// const perpand = (hour >= 12 ) ? "PM" : "AM";
 
-hour = (hour >= 12 ) ? hour - 12 : hour ;
+// hour = (hour >= 12 ) ? hour - 12 : hour ;
 
-if (hour === 0 && perpand === 'PM')  {
-    if (minute === 0 && second === 0) {
-        hour = 12;
-        perpand = 'Noon' 
-    }
-    else {
-        hour = 12;
-        perpand= 'PM';
-    }
+// if (hour === 0 && perpand === 'PM')  {
+//     if (minute === 0 && second === 0) {
+//         hour = 12;
+//         perpand = 'Noon' 
+//     }
+//     else {
+//         hour = 12;
+//         perpand= 'PM';
+//     }
+// }
+
+
+// if (hour === 0 && perpand === 'AM')  {
+//     if (minute === 0 && second === 0) {
+//         hour = 12;
+//         perpand = 'Midnight' 
+//     }
+//     else {
+//         hour = 12;
+//         perpand= 'AM';
+//     }
+// }
+
+// console.log( daylist[day] + " : " + hour + perpand + " : " + minute + " : " + second);
+
+
+// }
+// currentTime();
+
+// 2. Write a JavaScript program to print the current window contents. 
+
+// ANS:
+
+// const print = () => {
+//     window.print();
+// }
+
+// 3. Write a JavaScript program to get the current date.  
+// Expected Output :
+// mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+
+// ANS:
+
+// const date = () => {
+//     let currentDate = new Date();
+
+// let dd = currentDate.getDate();
+
+// let mm = currentDate.getMonth();
+
+// let yyyy = currentDate.getFullYear();
+
+// if(dd < 10) {
+//     dd = "0" + dd; 
+// }
+// if(mm < 10) {
+//     mm = "0" + mm; 
+// }
+
+// currentDate = mm + "-" + dd + "-" + yyyy;
+// console.log(currentDate)
+// currentDate = mm + "/" + dd + "/" + yyyy;
+// console.log(currentDate)
+// currentDate = dd + "-" + mm + "-" + yyyy;
+// console.log(currentDate)
+// currentDate = dd + "/" + mm + "/" + yyyy;
+// console.log(currentDate)
+// }
+// date();
+
+
+// 4. Write a JavaScript program to find the area of a triangle where three sides are 5, 6, 7
+
+// ANS:
+
+// const lengthOfTriangle = (side1, side2, side3) => {
+
+// let side = ((side1 + side2 + side3) / 2);
+
+// let area = Math.sqrt(side * ((side - side1) * (side - side2) * (side - side3)));
+ 
+// console.log(area);
+
+// }
+// lengthOfTriangle(5,6,7);
+ 
+
+// const test = (s,d,f,g) => {
+//     console.log(s,d,f,g,);
+    
+// }
+// test(1,4,5,5,);
+
+// 5. Write a JavaScript program to rotate the string 'w3resource' in the right direction. This is done by periodically removing one letter from the string end and attaching it to the front.  
+
+// ANS:
+
+function animateText() {
+
+let text = document.getElementById('text');
+
+
+setInterval(function () {
+    text = text[text.lenght - 1] + text.substring(0, text.lenght - 1);
+    textNode.data = text;
+}, 100);
 }
 
 
-if (hour === 0 && perpand === 'AM')  {
-    if (minute === 0 && second === 0) {
-        hour = 12;
-        perpand = 'Midnight' 
-    }
-    else {
-        hour = 12;
-        perpand= 'AM';
-    }
-}
-
-console.log( daylist[day] + " : " + hour + perpand + " : " + minute + " : " + second);
 
 
-}
-currentTime();
+
+
+
+
+
+
+
+
 
 
